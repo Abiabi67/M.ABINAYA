@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>dashboard</title>
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" style="font-size:36px"></i>
+
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto text-right">
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('support')}}">Support</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="{{url_for('home')}}">Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+          </nav>
+          <div class="container">
+          <div class="row  ">
+            <div class="column border box">
+              
+              <h4>Height: {{height}} </h4>
+            </div>
+            <div class="column border box">
+              
+              <h4>Weight: {{weight}} </h4>
+            </div>
+            </div>  
+            <div class="row my-0 ">
+              <div class="column border box">
+                
+                <h4>BMI: {{BMI}} </h4>
+              </div>
+              <div class="column border box">
+                
+                <h4>Calorie Intake: {{daily_calorie_intake}} </h4>
+              </div>
+            </div>
+            <div class="row">
+            <div class="column">
+              <a href="{{url_for('upload')}}" id="bu1" class="btn btn-info btn-lg">Upload Image</a>
+            </div>          
+            <div class="column ">
+              <a href="{{url_for('history')}}" id="bu1" class="btn btn-info btn-lg">Track History</a>
+            </div>
+          </div>  
+        </div>
+        </div>
+            </div>
+          </div>
+        
+    </body>
+</html>
